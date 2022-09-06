@@ -1,0 +1,50 @@
+# FCOS with improvements
+MODEL:
+  META_ARCHITECTURE: "GeneralizedRCNN"
+  WEIGHT: "catalog://ImageNetPretrained/MSRA/R-50"
+  RPN_ONLY: True
+  FCOS_ON: True
+  BACKBONE:
+    CONV_BODY: "R-50-FPN-RETINANET"
+  RESNETS:
+    BACKBONE_OUT_CHANNELS: 256
+  RETINANET:
+    USE_C5: False # FCOS uses P5 instead of C5
+  FCOS:
+    # normalizing the regression targets with FPN strides
+    NORM_REG_TARGETS: True
+    # positioning centerness on the regress branch.
+    # Please refer to https://github.com/tianzhi0549/FCOS/issues/89#issuecomment-516877042
+    CENTERNESS_ON_REG: True
+    # using center sampling and GIoU.
+    # Please refer to https://github.com/yqyao/FCOS_PLUS
+    CENTER_SAMPLING_RADIUS: 1.5
+    IOU_LOSS_TYPE: "giou"
+    USE_GFLOSS: True
+    # nms param
+    INFERENCE_TH: 0.6        # filter box candidates   0.7
+    PRE_NMS_TOP_N: 1000      
+    NMS_TH: 0.1             # nms iou thresh      0.2
+    NMS_TH_INFER: 0.5        # evaluation iou thresh
+
+DATASETS:
+  TRAIN: ("coco_TD500_test_train",)
+  TEST: ("coco_TD500_test",)
+  AUG: True
+  MAX_ROTATE_THETA: 90
+  TXT_PATH: '/data/projects/FCOS/datas/MSRA-TD500-HUST-TR400/test_json_id.txt'  # 储存txt时，img_id与img_name的对应关系
+  JSON_PATH: '/data/projects/FCOS/datas/MSRA-TD500-HUST-TR400/test_coco.json'  # 评价指标的数据集
+INPUT:
+  MIN_SIZE_TRAIN: (800, 900, 1000)  # (800, 1000, 1200, 1400)  # (800,)
+  MAX_SIZE_TRAIN: 1800  # 1333
+  MIN_SIZE_TEST: 1000
+  MAX_SIZE_TEST: 2333
+DATALOADER:
+  SIZE_DIVISIBILITY: 32
+SOLVER:
+  BASE_LR: 0.002  # 0.01
+  WEIGHT_DECAY: 0.0001  # 每隔steps lr变成原来的0.1
+  STEPS: (60000, 80000)       # (60000, 80000) (160000. 220000) (15000, 20000) (41500, 55500)   
+  MAX_ITER: 90000  # 单卡360：90000，单卡1000：250000， 多:360：22500， 多1000：62500  # 45000 90000 125000
+  IMS_PER_BATCH: 8  # 单卡是4，多卡是16
+  WARMUP_METHOD: "constant"

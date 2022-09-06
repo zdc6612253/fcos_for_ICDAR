@@ -1,0 +1,13 @@
+# ninja log v5
+6	28722	1641892308764814638	/data/ocr/FCOS/build/temp.linux-x86_64-3.7/fcos_core/csrc/cuda/deform_pool_kernel_cuda.o	ea8f5d82d6eaf6c8
+6	29753	1641892309794550893	/data/ocr/FCOS/build/temp.linux-x86_64-3.7/fcos_core/csrc/cuda/ml_nms.o	a4dec66464bd3e45
+5	31887	1641892311929077067	/data/ocr/FCOS/build/temp.linux-x86_64-3.7/fcos_core/csrc/cuda/deform_conv_kernel_cuda.o	ba8466968b39bc02
+5	32458	1641892312499484906	/data/ocr/FCOS/build/temp.linux-x86_64-3.7/fcos_core/csrc/cuda/SigmoidFocalLoss_cuda.o	52c287c67afe1c6a
+3	32486	1641892312528505655	/data/ocr/FCOS/build/temp.linux-x86_64-3.7/fcos_core/csrc/cuda/ROIAlign_cuda.o	e1d54409b4d6ef3a
+8	33794	1641892313836440821	/data/ocr/FCOS/build/temp.linux-x86_64-3.7/fcos_core/csrc/cuda/nms.o	4972f1b4ce86688
+4	34032	1641892314074611112	/data/ocr/FCOS/build/temp.linux-x86_64-3.7/fcos_core/csrc/cuda/ROIPool_cuda.o	a533712e6e473a33
+2	39310	1641892319345379681	/data/ocr/FCOS/build/temp.linux-x86_64-3.7/fcos_core/csrc/vision.o	b06fae922103a1f1
+46	22962	1641892382123265513	/data/ocr/FCOS/build/temp.linux-x86_64-3.7/fcos_core/csrc/cuda/deform_pool_cuda.o	76569ce683bf05ef
+45	26062	1641892385219479288	/data/ocr/FCOS/build/temp.linux-x86_64-3.7/fcos_core/csrc/cuda/deform_conv_cuda.o	151ccf5c0a0dc8c5
+45	24834	1641892813124428893	/data/ocr/FCOS/build/temp.linux-x86_64-3.7/fcos_core/csrc/cpu/ROIAlign_cpu.o	8d13bc039d976e9f
+44	30423	1641892818709422132	/data/ocr/FCOS/build/temp.linux-x86_64-3.7/fcos_core/csrc/cpu/nms_cpu.o	1782f437e57e3ace

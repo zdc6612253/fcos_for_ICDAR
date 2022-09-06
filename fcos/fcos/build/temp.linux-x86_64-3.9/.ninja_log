@@ -1,0 +1,19 @@
+# ninja log v5
+7	22589	1641888798909279036	/data/ocr/FCOS/build/temp.linux-x86_64-3.9/fcos_core/csrc/cuda/ml_nms.o	548bd9caaa210812
+2	23612	1641888799930904338	/data/ocr/FCOS/build/temp.linux-x86_64-3.9/fcos_core/csrc/cuda/ROIAlign_cuda.o	31872a4e0396265a
+6	23766	1641888800085999266	/data/ocr/FCOS/build/temp.linux-x86_64-3.9/fcos_core/csrc/cuda/deform_pool_kernel_cuda.o	57120edfec846a09
+7	24827	1641888801146648454	/data/ocr/FCOS/build/temp.linux-x86_64-3.9/fcos_core/csrc/cuda/nms.o	6ef32db21a46beb9
+1	24873	1641888801192676626	/data/ocr/FCOS/build/temp.linux-x86_64-3.9/fcos_core/csrc/cuda/SigmoidFocalLoss_cuda.o	2ed83d942d34ab4a
+5	25384	1641888801702988971	/data/ocr/FCOS/build/temp.linux-x86_64-3.9/fcos_core/csrc/cuda/deform_conv_kernel_cuda.o	f7eef121ce9842fc
+3	25518	1641888801837071038	/data/ocr/FCOS/build/temp.linux-x86_64-3.9/fcos_core/csrc/cuda/ROIPool_cuda.o	a5cce85b64b3b39f
+9	31521	1641888807842746910	/data/ocr/FCOS/build/temp.linux-x86_64-3.9/fcos_core/csrc/vision.o	f6c364f6213380ba
+79	25884	1641891964818277249	/data/ocr/FCOS/build/temp.linux-x86_64-3.9/fcos_core/csrc/cuda/deform_pool_kernel_cuda.o	9196b1aaac330db7
+81	26131	1641891965064454187	/data/ocr/FCOS/build/temp.linux-x86_64-3.9/fcos_core/csrc/cuda/ml_nms.o	2e515ea3dfc1185b
+73	26529	1641891965462740451	/data/ocr/FCOS/build/temp.linux-x86_64-3.9/fcos_core/csrc/cuda/ROIAlign_cuda.o	6fb9ef33b351b204
+83	27745	1641891966676612909	/data/ocr/FCOS/build/temp.linux-x86_64-3.9/fcos_core/csrc/cuda/nms.o	93d5654a13e1a0b9
+74	27961	1641891966895770426	/data/ocr/FCOS/build/temp.linux-x86_64-3.9/fcos_core/csrc/cuda/ROIPool_cuda.o	507687d8060a994f
+72	28574	1641891967507209892	/data/ocr/FCOS/build/temp.linux-x86_64-3.9/fcos_core/csrc/cuda/SigmoidFocalLoss_cuda.o	90e46579179c4018
+84	30039	1641891968977266481	/data/ocr/FCOS/build/temp.linux-x86_64-3.9/fcos_core/csrc/vision.o	ca0ec51b05b2f230
+76	31098	1641891970031023858	/data/ocr/FCOS/build/temp.linux-x86_64-3.9/fcos_core/csrc/cuda/deform_conv_kernel_cuda.o	e2f386d39e6d429b
+49	22819	1641892211336153699	/data/ocr/FCOS/build/temp.linux-x86_64-3.9/fcos_core/csrc/cuda/deform_pool_cuda.o	c8420f4f4be47b98
+49	23064	1641892211578326852	/data/ocr/FCOS/build/temp.linux-x86_64-3.9/fcos_core/csrc/cuda/deform_conv_cuda.o	2061fedc52dddb28
